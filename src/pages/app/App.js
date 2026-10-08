@@ -11,6 +11,7 @@ function App() {
     <div>
       <Link to="/contato">
         <img className='voltar' src='./assets/image/download.jpg' alt='voltar'></img>
+        
       </Link>
     </div>
     </div>
