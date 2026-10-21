@@ -13,7 +13,7 @@ function Index() {
   return (
     <div className="inicial">
       <header className="inicio">
-        <img className="logo-pata" src="./assets/image/logo pata.png" alt="Logo Pata Amiga" />
+        <img className="logo-pata" src="./assets/image/logo-pata.png" alt="Logo Pata Amiga" />
 
         <nav className="menu-navegacao">
           <Link to="/inicio" className="nav-item">Inicio</Link>
@@ -58,15 +58,49 @@ function Index() {
             </div>
 
                     <div className='quadrado-branco'>
+                    
+
                       <div className='div-adotar'>
                         <img className="adotar-img" src="/assets/image/circulo pata.jpg" alt="Adotar" />
                         <h1 className='adote-h1'>Adote</h1>
-
+                        <p className='adote-p'>Adotar um cachorro é oferecer amor, 
+                                              proteção e uma nova chance de vida a 
+                                              um animal que precisa de um lar 
+                                              e de uma família..</p>
                       </div>
-                      <div className='doe' ></div>
-                      <div className='diferença'></div>
+ 
+                      <div className='doe' >
+                        <img className="doe-img" src="/assets/image/coracao verde.png" alt="Doar" />
+                        <h1 className='doe-h1'>Doe</h1>
+                        <p className='doe-p'>Doar ajuda animais que precisam de alimento, cuidados veterinários,
+                           abrigo e carinho, garantindo melhores condições de vida e novas oportunidades.</p>
+                      </div>
+
+                      <div className='diferença'>
+                        <img className="diferença-img" src="/assets/image/folha verde.png" alt="Diferença" />
+                        <h1 className='diferença-h1'>Faça a Diferença</h1>
+                        <p className='diferença-p'>Pequenas atitudes podem mudar completamente a vida 
+                                                   de um animal, oferecendo esperança, segurança e a chance de 
+                                                   encontrar um lar cheio de carinho</p>
+                      </div>
 
                     </div>
+
+
+              <div className='quadrado-final'>
+                
+                <div className='info-final1'>
+                    <div className='pata-amiga2'>
+                        <img src="" alt="" />
+                    </div>
+                </div> 
+                
+                <div className='info-final2' >
+                
+                
+                </div> 
+                 
+              </div>
 
     </div>
 
