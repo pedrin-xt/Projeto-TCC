@@ -16,7 +16,7 @@ function Index() {
         <img className="logo-pata" src="./assets/image/logo-pata.png" alt="Logo Pata Amiga" />
 
         <nav className="menu-navegacao">
-          <Link to="/inicio" className="nav-item">Inicio</Link>
+          <Link to="/" className="nav-item">Inicio</Link>
           <Link to="/adotar" className="nav-item">Adotar</Link>
           <Link to="/doar" className="nav-item">Doar</Link>
           <Link to="/sobre" className="nav-item">Sobre</Link>
@@ -91,7 +91,8 @@ function Index() {
                 
                 <div className='info-final1'>
                     <div className='pata-amiga2'>
-                        <img src="" alt="" />
+                        <img className='cachorro-de-lado' src="/assets/image/cachorro-de-lado.png" alt="cachorro de lado" />
+                        
                     </div>
                 </div> 
                 

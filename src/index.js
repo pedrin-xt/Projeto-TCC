@@ -11,9 +11,9 @@ root.render(
   <React.StrictMode>
     <BrowserRouter>
     <Routes>
-      <Route path='/.' element={<App/>} />
+      <Route path='/' element={<Projeto/>} />
       <Route path='/adotar' element={<Eventos/>} />
-      <Route path='/inicio' element={<Projeto/>} />
+      <Route path='/incio' element={<App/>} />
     </Routes>
     </BrowserRouter>
   </React.StrictMode>
