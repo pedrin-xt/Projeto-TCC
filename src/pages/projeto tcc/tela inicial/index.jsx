@@ -58,7 +58,8 @@ function Index() {
             </div>
 
                     <div className='quadrado-branco'>
-                    
+                      <img className='pataesquerda' src="/assets/image/pata-esquerda.png" alt='esquerda' />
+                    <img className='patadireita' src="/assets/image/pata-direita.png" alt="direita" />
 
                       <div className='div-adotar'>
                         <img className="adotar-img" src="/assets/image/circulo pata.jpg" alt="Adotar" />
@@ -91,9 +92,12 @@ function Index() {
                 
                 <div className='info-final1'>
                     <div className='pata-amiga2'>
-                        <img className='cachorro-de-lado' src="/assets/image/cachorro-de-lado.png" alt="cachorro de lado" />
-                        
-                    </div>
+                        <img className='cachorro-de-lado' src="/assets/image/logo-branca.png" alt="logo-branca" />
+                        <img className='tres-icones' src="/assets/image/imagem-icones.png" alt="imagem-icones" />
+                </div>
+                <strong> Mais do que um projeto de adoção, um compromisso de amor, cuidado e transformação, que dá uma nova chance a pets necessitados em todo o Brasil.</strong>   
+                
+
                 </div> 
                 
                 <div className='info-final2' >
@@ -102,6 +106,7 @@ function Index() {
                 </div> 
                  
               </div>
+
 
     </div>
 
