@@ -1,3 +1,4 @@
+
 .inicial {
   width: 100%;
   height: 1000px;
@@ -5,22 +6,31 @@
   margin: 0;
 }
 
+/* ========================= */
+/* BARRA INICIAL */
+/* ========================= */
+
 .inicio {
   display: flex;
   align-items: center;
   justify-content: space-between;
+
   padding: 10px 40px;
-  background-color: #f7f6f6;
+
+  /* ALTERADO: branco igual à tela Adotar */
+  background-color: #ffffff;
+
   width: 1200px;
   height: 50px;
   margin-left: -20px;
-  
+
+  /* leve sombra igual à ideia da segunda tela */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 
   .logo-pata {
     height: 120px;
     object-fit: contain;
     padding-top: 10px;
-    
   }
 
   .menu-navegacao {
@@ -30,15 +40,17 @@
     padding-top: 10px;
     margin-left: 40px;
 
-
     .nav-item {
       text-decoration: none;
-      color: #333333;
+
+      /* ALTERADO: verde */
+      color: #205b38;
+
       font-weight: 800;
       font-size: 18px;
 
       &:hover {
-        color: #0056b3;
+        color: #4f9967;
       }
     }
   }
@@ -47,100 +59,128 @@
     display: flex;
     align-items: center;
     gap: 10px;
-  
 
     .campo-pesquisa {
       padding: 6px 12px;
+
       border: 1px solid #ccc;
+
       border-radius: 16px;
+
       outline: none;
+
       font-size: 13px;
+
       margin-left: 100px;
+
       position: relative;
       top: 6px;
+
+      /* ALTERADO: tamanho parecido com Adotar */
+      width: 170px;
+
+      &:focus {
+        border-color: #4f9967;
+      }
     }
 
     .pesquisa {
       height: 20px;
       width: 25px;
+
       cursor: pointer;
+
       margin-left: -250px;
+
       top: 6px;
+
       position: relative;
-      
     }
   }
 
-  .log{
+  .log {
     width: 25px;
-    margin-left:300px;
+    margin-left: 300px;
+
     position: relative;
     top: 6px;
   }
-    .log-in {
-        display: flex;
-        align-items: center;
-        gap: 10px;
-        width: 25px;
-        position: relative;
-        
-    
-    }
 
-    .fav{
-        width: 25px;
-        position: relative;
-        top: 6px;
+  .log-in {
+    display: flex;
+    align-items: center;
+    gap: 10px;
 
-    }
-    .favorito {
-        display: flex;
-        align-items: center;
-        gap: 10px;
-        width: 25px;
-       
-    
-    }
+    width: 25px;
 
+    position: relative;
+  }
+
+  .fav {
+    width: 25px;
+
+    position: relative;
+    top: 6px;
+  }
+
+  .favorito {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    width: 25px;
+  }
 }
 
-/* segunda parte do código */
+
+/* ========================= */
+/* PRIMEIRA PARTE */
+/* ========================= */
+
 .quadrado-verde {
   width: 1265px;
   height: 400px;
-  background-color: #395c9d;
-  margin: 20px auto; 
-    background-image: url('https://lens.usercontent.google.com/banana?agsi=CmdnbG9iYWw6OjAwMDA1NWNmZWM3MDAyNmQ6MDAwMDAxNDE6MTowMjczYzQ4MThkNjQyNWVkOjAwMDA1NWNmZWM3MDAyNmQ6MDAwMDAyZmUwYTQwMzM2ODowMDA2NWYwZDIxNjY5ZDBmEAIYAiIKaW1hZ2UvanBlZw==');
 
-  }
+  /* ALTERADO: azul -> verde */
+  background-color: #4f9967;
 
-  .texto-quadrado {
+  margin: 20px auto;
+
+
+  /* mantém sua imagem, mas faz ela ocupar o espaço */
+  background-size: cover;
+  background-position: center;
+}
+
+.texto-quadrado {
   color: white;
   text-align: center;
   padding-top: 20px;
   float: left;
 
+  .lar {
+    color: white;
+    font-size: 40px;
+    width: 500px;
+    text-align: left;
+    position: relative;
+    left: 120px;
+  }
 
-    .lar{
-      color: white;
-      font-size: 40px;
-      width: 500px;
-      text-align: left;
-      position: relative;
-      left: 120px;
-      
-    
-    }
-    .paragrafo{
-      color: white;
-      font-size: 16px;
-      width: 600px;
-      text-align: left;
-      position: relative;
-      left: 120px;
-    
-    }
+  .paragrafo {
+    color: white;
+    font-size: 16px;
+    width: 600px;
+    text-align: left;
+    position: relative;
+    left: 120px;
+  }
 }
+
+
+/* ========================= */
+/* IMAGEM */
+/* ========================= */
 
 .img-quadrado {
   width: 450px;
@@ -149,268 +189,436 @@
   position: relative;
   top: 30px;
   left: -80px;
+
+  /* continua igual, só mais parecido com Adotar */
   border-radius: 10px;
+
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.20);
 }
 
 .f1 {
   width: 100%;
   height: 100%;
+
   object-fit: cover;
+
   display: block;
 }
 
+
+/* ========================= */
+/* BOTÃO ADOTAR */
+/* ========================= */
+
 .adotar {
   display: inline-block;
+
   padding: 10px 20px;
-  background-color: #2a4370;
+
+  /* ALTERADO: azul -> verde escuro */
+  background-color: #276b43;
+
   color: white;
+
   text-decoration: none;
-  border-radius: 5px;
+
+  /* parecido com os botões da segunda tela */
+  border-radius: 20px;
+
   font-weight: bold;
+
   position: relative;
   left: -500px;
   top: 300px;
-  
 
   &:hover {
-    background-color: #f1f1f1; 
-    color: #333333;
-    border: 2px solid black;
+    background-color: #f1f1f1;
+
+    color: #276b43;
+
+    border: 2px solid #276b43;
+
     position: relative;
-    
   }
 
+  .seta {
+    width: 20px;
+    height: 20px;
 
-      .seta{
-        width: 20px;
-        height: 20px;
-        margin-left: 10px;
-        position: relative;
-        top: 5px;
-      }
+    margin-left: 10px;
 
-
+    position: relative;
+    top: 5px;
+  }
 }
 
-.doar{
+
+/* ========================= */
+/* BOTÃO DOAR */
+/* ========================= */
+
+.doar {
   display: inline-block;
+
   padding: 12px 30px;
-  background-color: #2a4370;
+
+  /* ALTERADO */
+  background-color: #276b43;
+
   color: white;
+
   text-decoration: none;
-  border-radius: 5px;
+
+  border-radius: 20px;
+
   font-weight: bold;
+
   position: relative;
   left: -250px;
   top: 254px;
 
   &:hover {
     background-color: #ffffff;
-    color: #333333;
-    border: 2px solid black;
+
+    color: #276b43;
+
+    border: 2px solid #276b43;
+
     position: relative;
-    
   }
 }
 
-  //terceira parte do código
-  .quadrado-branco {
-    width: 1265px;
-    height: 400px;
-    background-color: #f8f2f2;
-    margin: 20px auto; 
-    position: relative;
-    top: -20px;
-    border-radius: 2px;
-    display: flex;
-    gap: 8px;
-    align-items: center;
-    
-  
-   
-    .div-adotar{
-    background-color: #2a4370;
+
+/* ========================= */
+/* TERCEIRA PARTE */
+/* ========================= */
+
+.quadrado-branco {
+  width: 1265px;
+  height: 400px;
+
+  /* mantém seu fundo */
+  background-color: #f8f2f2;
+
+  margin: 20px auto;
+
+  position: relative;
+  top: -20px;
+
+  border-radius: 2px;
+
+  display: flex;
+  gap: 8px;
+
+  align-items: center;
+
+
+  /* ========================= */
+  /* ADOTE */
+  /* ========================= */
+
+  .div-adotar {
+    /* ALTERADO: azul -> verde */
+    background-color: #34784f;
+
     width: 330px;
     height: 150px;
+
     position: absolute;
+
     left: -1190px;
+
     border: 2px solid #ffffff;
+
     border-radius: 10px;
-     
-    
-    
-    .adotar-img{
+
+    .adotar-img {
       width: 40px;
+
       margin-left: 10px;
       margin-top: 10px;
+
       border-radius: 50px;
+
       float: left;
     }
 
-    .adote-h1{
-    color: rgb(49, 209, 84);
-    font-size: 20px;
-    padding-top: -10px;
-    position: relative;
-    Left: 10px;
-    } 
+    .adote-h1 {
+      /* verde mais claro */
+      color: #55d66d;
 
-    .adote-p{
-      color: rgb(255, 255, 255);
-      font-size: 15px;
+      font-size: 20px;
+
       padding-top: -10px;
+
       position: relative;
+
+      Left: 10px;
+    }
+
+    .adote-p {
+      color: rgb(255, 255, 255);
+
+      font-size: 15px;
+
+      padding-top: -10px;
+
+      position: relative;
+
       width: 250px;
-      Left: 30px;
-    }
-    
-     }
-    .doe{
-      background-color: #2a4370;
-    width: 330px;
-    height: 150px;
-    position: absolute;
-    left: -1090px;
-    border: 2px solid #ffffff;
-    border-radius: 10px;
-     
 
-    .doe-img{
-      width: 40px;
-      margin-left: 10px;
-      margin-top: 10px;
-      border-radius: 50px;
-      float: left;
-    }
-    .doe-h1{
-    color: rgb(50, 216, 50);
-    font-size: 20px;
-    padding-top: -10px; 
-    position: relative;
-    Left: 10px;  
-    }
-  
-    .doe-p{
-      color: rgb(255, 255, 255);
-      font-size: 15px;
-      padding-top: -10px;
-      position: relative;
-      width: 290px;
       Left: 30px;
-    }  
-    
-    }
-    .diferença{
-      background-color: #2a4370;
-    width: 330px;
-    height: 150px;
-    position: absolute;
-    left: -990px;
-    border: 2px solid #ffffff;
-    border-radius: 10px;
-      
-
-    .diferença-img{
-      width: 40px;
-      margin-left: 10px;
-      margin-top: 10px;
-      border-radius: 50px;
-      float: left;
-
-    }
-    .diferença-h1{
-    color: rgb(46, 221, 84);
-        font-size: 20px;
-    padding-top: -10px; 
-    position: relative;
-    Left: 10px;
-    }
-  
-    .diferença-p{
-      color: rgb(255, 255, 255);
-      font-size: 15px;
-      padding-top: -10px;
-      position: relative;
-      width: 300px;
-      Left: 30px;
-      
     }
   }
 
-  .pataesquerda{
+
+  /* ========================= */
+  /* DOE */
+  /* ========================= */
+
+  .doe {
+    /* ALTERADO */
+    background-color: #34784f;
+
+    width: 330px;
+    height: 150px;
+
+    position: absolute;
+
+    left: -1090px;
+
+    border: 2px solid #ffffff;
+
+    border-radius: 10px;
+
+    .doe-img {
+      width: 40px;
+
+      margin-left: 10px;
+      margin-top: 10px;
+
+      border-radius: 50px;
+
+      float: left;
+    }
+
+    .doe-h1 {
+      color: #55d66d;
+
+      font-size: 20px;
+
+      padding-top: -10px;
+
+      position: relative;
+
+      Left: 10px;
+    }
+
+    .doe-p {
+      color: rgb(255, 255, 255);
+
+      font-size: 15px;
+
+      padding-top: -10px;
+
+      position: relative;
+
+      width: 290px;
+
+      Left: 30px;
+    }
+  }
+
+
+  /* ========================= */
+  /* FAÇA A DIFERENÇA */
+  /* ========================= */
+
+  .diferença {
+    /* ALTERADO */
+    background-color: #34784f;
+
+    width: 330px;
+    height: 150px;
+
+    position: absolute;
+
+    left: -990px;
+
+    border: 2px solid #ffffff;
+
+    border-radius: 10px;
+
+    .diferença-img {
+      width: 40px;
+
+      margin-left: 10px;
+      margin-top: 10px;
+
+      border-radius: 50px;
+
+      float: left;
+    }
+
+    .diferença-h1 {
+      color: #55d66d;
+
+      font-size: 20px;
+
+      padding-top: -10px;
+
+      position: relative;
+
+      Left: 10px;
+    }
+
+    .diferença-p {
+      color: rgb(255, 255, 255);
+
+      font-size: 15px;
+
+      padding-top: -10px;
+
+      position: relative;
+
+      width: 300px;
+
+      Left: 30px;
+    }
+  }
+
+
+  /* ========================= */
+  /* PATINHAS */
+  /* ========================= */
+
+  .pataesquerda {
     width: 540px;
     margin-top: -100px;
-    
   }
-  
-  .patadireita{
+
+  .patadireita {
     width: 500px;
+
     margin-left: 190px;
+
     margin-top: 100px;
   }
 }
 
-// parte final
-.quadrado-final{
+
+/* ========================= */
+/* PARTE FINAL */
+/* ========================= */
+
+.quadrado-final {
   width: 1265px;
-    height: 300px;
-    background-color: #2B8343;
-    margin: 20px auto; 
+
+  height: 300px;
+
+  /* já era verde, mantive */
+  background-color: #2b8343;
+
+  margin: 20px auto;
+
+  position: relative;
+  top: -40px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+ 
+  .info-final1 {
+    width: 300px;
+
+    height: 190px;
+
     position: relative;
-    top: -40px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-image: url('https://lens.usercontent.google.com/banana?agsi=CmdnbG9iYWw6OjAwMDA1NWNmZWM3MDAyNmQ6MDAwMDAxNDE6MTowMjczYzQ4MThkNjQyNWVkOjAwMDA1NWNmZWM3MDAyNmQ6MDAwMDAyZmUwYTQwMzM2ODowMDA2NWYwZDIxNjY5ZDBmEAIYAiIKaW1hZ2UvanBlZw==');
 
-    .info-final1{
-      width:300px;
-      height: 190px;
+    left: 60px;
+
+    color: white;
+
+    font-style: bold;
+
+    .cachorro-de-lado {
+      width: 150px;
+
       position: relative;
-      left: 60px;
-      color: white;
-      font-style: bold;
 
-
-      .cachorro-de-lado{
-        width: 150px;
-        position: relative;
-        right: 3px;
-      }
-
-      .tres-icones{
-        width: 100px;
-        position: relative;
-        top: 150px;
-        left: -173px;
-      }
-
+      right: 3px;
     }
 
-    .info-final2{
-     
-      width: 200px;
-      height: 300px;
+    .tres-icones {
+      width: 100px;
+
       position: relative;
-      right: 60px;
+
+      top: 150px;
+
+      left: -173px;
     }
+  }
+
+  .info-final2 {
+    width: 200px;
+
+    height: 300px;
+
+    position: relative;
+
+    right: 60px;
+
+    .coluna-rodape {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+
+      h3 {
+        color: white;
+      }
+
+      a {
+        color: white;
+        text-decoration: none;
+
+        &:hover {
+          color: #d9f2df;
+        }
+      }
+    }
+  }
 }
 
 
-
+/* ========================= */
+/* ANIMAÇÃO DOS CARDS */
+/* ========================= */
 
 .quadrado-branco {
   .div-adotar,
   .doe,
   .diferença {
     box-sizing: border-box;
+
     position: relative;
+
     overflow: hidden;
+
     flex-shrink: 0;
+
     height: 150px;
-    transition: height 0.35s ease, transform 0.35s ease,
+
+    transition:
+      height 0.35s ease,
+      transform 0.35s ease,
       box-shadow 0.35s ease;
+
     z-index: 1;
+
     cursor: pointer;
   }
 
@@ -418,16 +626,27 @@
   .doe::after,
   .diferença::after {
     display: block;
+
     position: absolute;
+
     left: 20px;
     right: 16px;
     bottom: 14px;
+
     color: #ffffff;
+
     font-size: 14px;
+
     line-height: 1.4;
+
     opacity: 0;
+
     transform: translateY(8px);
-    transition: opacity 0.3s ease, transform 0.3s ease;
+
+    transition:
+      opacity 0.3s ease,
+      transform 0.3s ease;
+
     pointer-events: none;
   }
 
@@ -450,8 +669,14 @@
   .doe:focus-within,
   .diferença:focus-within {
     height: 225px;
-    transform: translateY(-6px) scale(1.03);
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25);
+
+    transform:
+      translateY(-6px)
+      scale(1.03);
+
+    box-shadow:
+      0 12px 24px rgba(0, 0, 0, 0.25);
+
     z-index: 5;
   }
 
@@ -462,6 +687,7 @@
   .doe:focus-within::after,
   .diferença:focus-within::after {
     opacity: 1;
+
     transform: translateY(0);
   }
 
@@ -471,6 +697,11 @@
     opacity: 0.95;
   }
 }
+
+
+/* ========================= */
+/* ACESSIBILIDADE */
+/* ========================= */
 
 @media (prefers-reduced-motion: reduce) {
   .quadrado-branco .div-adotar,
