@@ -1,10 +1,11 @@
 
 .inicial {
   width: 100%;
-  height: 1000px;
-  padding: 0%;
+  min-height: 1000px;
+  padding: 0;
   margin: 0;
 }
+
 
 /* ========================= */
 /* BARRA INICIAL */
@@ -17,118 +18,245 @@
 
   padding: 10px 40px;
 
-  /* ALTERADO: branco igual à tela Adotar */
   background-color: #ffffff;
 
   width: 1200px;
   height: 50px;
+
   margin-left: -20px;
 
-  /* leve sombra igual à ideia da segunda tela */
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+
+  position: relative;
+  z-index: 10;
+
+
+  /* ========================= */
+  /* LOGO */
+  /* ========================= */
 
   .logo-pata {
     height: 120px;
+    width: 120px;
+
     object-fit: contain;
+
     padding-top: 10px;
+
+    display: block;
   }
+
+
+  /* ========================= */
+  /* MENU */
+  /* ========================= */
 
   .menu-navegacao {
     display: flex;
-    gap: 40px;
+
     align-items: center;
+    justify-content: center;
+
+    gap: 40px;
+
     padding-top: 10px;
-    margin-left: 40px;
+
+    margin: 0 auto;
+
+    flex: 1;
 
     .nav-item {
       text-decoration: none;
 
-      /* ALTERADO: verde */
       color: #205b38;
 
       font-weight: 800;
-      font-size: 18px;
+
+      font-size: 20px;
+
+      font-family: Georgia, 'Times New Roman', serif;
+
+      position: relative;
+
+      padding-bottom: 9px;
+
+      white-space: nowrap;
+
+      transition: color 0.2s ease;
+
 
       &:hover {
         color: #4f9967;
       }
-    }
-  }
 
-  .container-pesquisa {
-    display: flex;
-    align-items: center;
-    gap: 10px;
 
-    .campo-pesquisa {
-      padding: 6px 12px;
+      /* ========================= */
+      /* LINHA DA PÁGINA ATUAL */
+      /* ========================= */
 
-      border: 1px solid #ccc;
+      &.ativo {
+        color: #205b38;
 
-      border-radius: 16px;
+        &::after {
+          content: "";
 
-      outline: none;
+          position: absolute;
 
-      font-size: 13px;
+          left: 0;
+          right: 0;
 
-      margin-left: 100px;
+          bottom: 0;
 
-      position: relative;
-      top: 6px;
+          height: 3px;
 
-      /* ALTERADO: tamanho parecido com Adotar */
-      width: 170px;
+          background-color: #4f9967;
 
-      &:focus {
-        border-color: #4f9967;
+          border-radius: 2px;
+        }
       }
     }
-
-    .pesquisa {
-      height: 20px;
-      width: 25px;
-
-      cursor: pointer;
-
-      margin-left: -250px;
-
-      top: 6px;
-
-      position: relative;
-    }
   }
 
-  .log {
-    width: 25px;
-    margin-left: 300px;
 
-    position: relative;
-    top: 6px;
-  }
+  /* ========================= */
+  /* ÍCONES DO HEADER */
+  /* ========================= */
 
-  .log-in {
+  .icones-header {
     display: flex;
+
     align-items: center;
-    gap: 10px;
 
-    width: 25px;
+    gap: 18px;
 
-    position: relative;
+    width: 80px;
+
+    justify-content: flex-end;
   }
 
-  .fav {
-    width: 25px;
 
-    position: relative;
-    top: 6px;
-  }
+  /* LOGIN */
 
-  .favorito {
+  .login-link {
     display: flex;
-    align-items: center;
-    gap: 10px;
 
+    align-items: center;
+    justify-content: center;
+
+    text-decoration: none;
+  }
+
+  .login {
     width: 25px;
+    height: 25px;
+
+    object-fit: contain;
+
+    display: block;
+  }
+
+
+  /* ========================= */
+  /* CORAÇÃO */
+  /* ========================= */
+
+  .botao-favorito {
+    border: none;
+
+    background: transparent;
+
+    padding: 0;
+
+    margin: 0;
+
+    cursor: pointer;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+  }
+
+
+  .coracao-verde {
+    font-size: 30px;
+
+    line-height: 1;
+
+    color: #2b8343;
+
+    font-family: Arial, sans-serif;
+
+    transition:
+      transform 0.2s ease,
+      color 0.2s ease;
+  }
+
+
+  .botao-favorito:hover .coracao-verde {
+    color: #205b38;
+
+    transform: scale(1.12);
+  }
+}
+
+
+/* ========================= */
+/* PAINEL DE FAVORITOS */
+/* ========================= */
+
+.painel-favoritos {
+  position: absolute;
+
+  top: 75px;
+
+  right: 35px;
+
+  width: 300px;
+
+  min-height: 120px;
+
+  background-color: white;
+
+  border-radius: 10px;
+
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.18);
+
+  z-index: 20;
+
+  padding: 20px;
+}
+
+
+.favoritos-vazio {
+  text-align: center;
+
+  color: #205b38;
+
+
+  span {
+    font-size: 35px;
+
+    color: #2b8343;
+  }
+
+
+  h3 {
+    margin: 5px 0;
+
+    font-family: Georgia, 'Times New Roman', serif;
+
+    font-size: 20px;
+  }
+
+
+  p {
+    margin: 0;
+
+    color: #666;
+
+    font-size: 13px;
   }
 }
 
@@ -139,40 +267,57 @@
 
 .quadrado-verde {
   width: 1265px;
+
   height: 400px;
 
-  /* ALTERADO: azul -> verde */
   background-color: #4f9967;
 
   margin: 20px auto;
 
-
-  /* mantém sua imagem, mas faz ela ocupar o espaço */
   background-size: cover;
+
   background-position: center;
 }
 
+
 .texto-quadrado {
   color: white;
+
   text-align: center;
+
   padding-top: 20px;
+
   float: left;
+
 
   .lar {
     color: white;
+
     font-size: 40px;
+
     width: 500px;
+
     text-align: left;
+
     position: relative;
+
     left: 120px;
+
+    font-family: Georgia, 'Times New Roman', serif;
   }
+
 
   .paragrafo {
     color: white;
+
     font-size: 16px;
+
     width: 600px;
+
     text-align: left;
+
     position: relative;
+
     left: 120px;
   }
 }
@@ -184,20 +329,26 @@
 
 .img-quadrado {
   width: 450px;
+
   overflow: hidden;
+
   float: right;
+
   position: relative;
+
   top: 30px;
+
   left: -80px;
 
-  /* continua igual, só mais parecido com Adotar */
   border-radius: 10px;
 
   box-shadow: 0 8px 18px rgba(0, 0, 0, 0.20);
 }
 
+
 .f1 {
   width: 100%;
+
   height: 100%;
 
   object-fit: cover;
@@ -215,21 +366,22 @@
 
   padding: 10px 20px;
 
-  /* ALTERADO: azul -> verde escuro */
   background-color: #276b43;
 
   color: white;
 
   text-decoration: none;
 
-  /* parecido com os botões da segunda tela */
   border-radius: 20px;
 
   font-weight: bold;
 
   position: relative;
+
   left: -500px;
+
   top: 300px;
+
 
   &:hover {
     background-color: #f1f1f1;
@@ -237,17 +389,18 @@
     color: #276b43;
 
     border: 2px solid #276b43;
-
-    position: relative;
   }
+
 
   .seta {
     width: 20px;
+
     height: 20px;
 
     margin-left: 10px;
 
     position: relative;
+
     top: 5px;
   }
 }
@@ -262,7 +415,6 @@
 
   padding: 12px 30px;
 
-  /* ALTERADO */
   background-color: #276b43;
 
   color: white;
@@ -274,8 +426,11 @@
   font-weight: bold;
 
   position: relative;
+
   left: -250px;
+
   top: 254px;
+
 
   &:hover {
     background-color: #ffffff;
@@ -283,8 +438,6 @@
     color: #276b43;
 
     border: 2px solid #276b43;
-
-    position: relative;
   }
 }
 
@@ -295,47 +448,56 @@
 
 .quadrado-branco {
   width: 1265px;
+  max-width: 100%;
+
   height: 400px;
 
-  /* mantém seu fundo */
   background-color: #f8f2f2;
 
   margin: 20px auto;
 
   position: relative;
+
   top: -20px;
 
   border-radius: 2px;
 
+  /* cards centralizados */
   display: flex;
-  gap: 8px;
-
+  justify-content: center;
   align-items: center;
+  gap: 24px;
+
+  /* patas não geram barra de rolagem */
+  overflow: hidden;
 
 
   /* ========================= */
-  /* ADOTE */
+  /* CARDS (ADOTE / DOE / DIFERENÇA) */
   /* ========================= */
 
-  .div-adotar {
-    /* ALTERADO: azul -> verde */
+  .div-adotar,
+  .doe,
+  .diferença {
     background-color: #34784f;
 
     width: 330px;
+
     height: 150px;
-
-    position: absolute;
-
-    left: -1190px;
 
     border: 2px solid #ffffff;
 
     border-radius: 10px;
+  }
+
+
+  .div-adotar {
 
     .adotar-img {
       width: 40px;
 
       margin-left: 10px;
+
       margin-top: 10px;
 
       border-radius: 50px;
@@ -343,116 +505,83 @@
       float: left;
     }
 
+
     .adote-h1 {
-      /* verde mais claro */
       color: #55d66d;
 
       font-size: 20px;
 
-      padding-top: -10px;
-
       position: relative;
 
-      Left: 10px;
+      left: 10px;
+
+      font-family: Georgia, 'Times New Roman', serif;
     }
+
 
     .adote-p {
       color: rgb(255, 255, 255);
 
       font-size: 15px;
 
-      padding-top: -10px;
-
       position: relative;
 
       width: 250px;
 
-      Left: 30px;
+      left: 30px;
     }
   }
 
 
-  /* ========================= */
-  /* DOE */
-  /* ========================= */
-
   .doe {
-    /* ALTERADO */
-    background-color: #34784f;
-
-    width: 330px;
-    height: 150px;
-
-    position: absolute;
-
-    left: -1090px;
-
-    border: 2px solid #ffffff;
-
-    border-radius: 10px;
 
     .doe-img {
       width: 40px;
 
       margin-left: 10px;
+
       margin-top: 10px;
 
       border-radius: 50px;
 
       float: left;
     }
+
 
     .doe-h1 {
       color: #55d66d;
 
       font-size: 20px;
 
-      padding-top: -10px;
-
       position: relative;
 
-      Left: 10px;
+      left: 10px;
+
+      font-family: Georgia, 'Times New Roman', serif;
     }
+
 
     .doe-p {
       color: rgb(255, 255, 255);
 
       font-size: 15px;
 
-      padding-top: -10px;
-
       position: relative;
 
       width: 290px;
 
-      Left: 30px;
+      left: 30px;
     }
   }
 
 
-  /* ========================= */
-  /* FAÇA A DIFERENÇA */
-  /* ========================= */
-
   .diferença {
-    /* ALTERADO */
-    background-color: #34784f;
-
-    width: 330px;
-    height: 150px;
-
-    position: absolute;
-
-    left: -990px;
-
-    border: 2px solid #ffffff;
-
-    border-radius: 10px;
 
     .diferença-img {
       width: 40px;
 
       margin-left: 10px;
+
       margin-top: 10px;
 
       border-radius: 50px;
@@ -460,136 +589,141 @@
       float: left;
     }
 
+
     .diferença-h1 {
       color: #55d66d;
 
       font-size: 20px;
 
-      padding-top: -10px;
-
       position: relative;
 
-      Left: 10px;
+      left: 10px;
+
+      font-family: Georgia, 'Times New Roman', serif;
     }
+
 
     .diferença-p {
       color: rgb(255, 255, 255);
 
       font-size: 15px;
 
-      padding-top: -10px;
-
       position: relative;
 
       width: 300px;
 
-      Left: 30px;
+      left: 30px;
     }
   }
 
 
   /* ========================= */
-  /* PATINHAS */
+  /* PATINHAS (ATRÁS DOS CARDS) */
   /* ========================= */
 
   .pataesquerda {
+    position: absolute;
+
+    left: 0;
+    top: 10px;
+
     width: 540px;
-    margin-top: -100px;
+    max-width: 45%;
+
+    z-index: 0;
+
+    pointer-events: none;
   }
 
+
   .patadireita {
+    position: absolute;
+
+    right: 0;
+    bottom: 0;
+
     width: 500px;
+    max-width: 45%;
 
-    margin-left: 190px;
+    z-index: 0;
 
-    margin-top: 100px;
+    pointer-events: none;
   }
 }
 
 
 /* ========================= */
-/* PARTE FINAL */
+/* PARTE FINAL (RODAPÉ) */
 /* ========================= */
 
-.quadrado-final {
-  width: 1265px;
+.rodape {
+  width: 100%;
+  min-height: 180px;
+  padding: 28px 7% 15px;
+  background: #4b925f;
+  color: #ffffff;
+  box-sizing: border-box;
 
-  height: 300px;
+  .rodape-principal {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    padding-bottom: 25px;
+  }
 
-  /* já era verde, mantive */
-  background-color: #2b8343;
+  .rodape-marca {
+    max-width: 350px;
 
-  margin: 20px auto;
-
-  position: relative;
-  top: -40px;
-
-  display: flex;
-
-  align-items: center;
-
-  justify-content: space-between;
-
- 
-  .info-final1 {
-    width: 300px;
-
-    height: 190px;
-
-    position: relative;
-
-    left: 60px;
-
-    color: white;
-
-    font-style: bold;
-
-    .cachorro-de-lado {
-      width: 150px;
-
-      position: relative;
-
-      right: 3px;
+    img {
+      width: 125px;
+      height: 35px;
+      object-fit: contain;
+      object-position: left;
+      margin-bottom: 12px;
     }
 
-    .tres-icones {
-      width: 100px;
-
-      position: relative;
-
-      top: 150px;
-
-      left: -173px;
+    p {
+      max-width: 330px;
+      color: #e6f0e8;
+      font-size: 18px;
+      line-height: 1.7;
     }
   }
 
-  .info-final2 {
-    width: 200px;
+  .rodape-links {
+    display: flex;
+    gap: 65px;
 
-    height: 300px;
-
-    position: relative;
-
-    right: 60px;
-
-    .coluna-rodape {
+    div {
       display: flex;
       flex-direction: column;
-      gap: 8px;
+      gap: 9px;
 
       h3 {
-        color: white;
+        font-size: 12px;
+        margin-bottom: 3px;
       }
 
       a {
-        color: white;
         text-decoration: none;
+        color: #e5eee6;
+        font-size: 18px;
+        transition: 0.3s;
 
         &:hover {
-          color: #d9f2df;
+          color: #ffffff;
+          transform: translateX(3px);
         }
       }
     }
+  }
+
+  .rodape-final {
+    padding-top: 12px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    text-align: center;
+    font-size: 10px;
+    color: #e5eee6;
   }
 }
 
@@ -599,9 +733,11 @@
 /* ========================= */
 
 .quadrado-branco {
+
   .div-adotar,
   .doe,
   .diferença {
+
     box-sizing: border-box;
 
     position: relative;
@@ -622,15 +758,19 @@
     cursor: pointer;
   }
 
+
   .div-adotar::after,
   .doe::after,
   .diferença::after {
+
     display: block;
 
     position: absolute;
 
     left: 20px;
+
     right: 16px;
+
     bottom: 14px;
 
     color: #ffffff;
@@ -650,17 +790,24 @@
     pointer-events: none;
   }
 
+
   .div-adotar::after {
-    content: "Conheca os animais disponiveis, escolha seu novo companheiro e ofereca a ele um lar cheio de carinho.";
+    content:
+      "Conheca os animais disponiveis, escolha seu novo companheiro e ofereca a ele um lar cheio de carinho.";
   }
+
 
   .doe::after {
-    content: "Voce pode doar racao, cobertores, medicamentos ou contribuir com os cuidados veterinarios dos animais resgatados.";
+    content:
+      "Voce pode doar racao, cobertores, medicamentos ou contribuir com os cuidados veterinarios dos animais resgatados.";
   }
 
+
   .diferença::after {
-    content: "Seja voluntario, divulgue campanhas e ajude os animais a encontrarem uma familia responsavel.";
+    content:
+      "Seja voluntario, divulgue campanhas e ajude os animais a encontrarem uma familia responsavel.";
   }
+
 
   .div-adotar:hover,
   .doe:hover,
@@ -668,6 +815,7 @@
   .div-adotar:focus-within,
   .doe:focus-within,
   .diferença:focus-within {
+
     height: 225px;
 
     transform:
@@ -680,20 +828,24 @@
     z-index: 5;
   }
 
+
   .div-adotar:hover::after,
   .doe:hover::after,
   .diferença:hover::after,
   .div-adotar:focus-within::after,
   .doe:focus-within::after,
   .diferença:focus-within::after {
+
     opacity: 1;
 
     transform: translateY(0);
   }
 
+
   .div-adotar:hover .adote-p,
   .doe:hover .doe-p,
   .diferença:hover .diferença-p {
+
     opacity: 0.95;
   }
 }
@@ -704,12 +856,34 @@
 /* ========================= */
 
 @media (prefers-reduced-motion: reduce) {
+
   .quadrado-branco .div-adotar,
   .quadrado-branco .doe,
   .quadrado-branco .diferença,
   .quadrado-branco .div-adotar::after,
   .quadrado-branco .doe::after,
   .quadrado-branco .diferença::after {
+
     transition: none;
+  }
+}
+
+
+/* ========================= */
+/* RESPONSIVIDADE DO RODAPÉ */
+/* ========================= */
+
+@media (max-width: 600px) {
+
+  .rodape {
+    .rodape-principal {
+      flex-direction: column;
+      gap: 30px;
+    }
+
+    .rodape-links {
+      justify-content: space-between;
+      gap: 20px;
+    }
   }
 }
