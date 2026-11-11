@@ -132,13 +132,7 @@ function Index() {
 
         <div className="icones-header">
 
-          <Link to="/login" className="icone-header">
-            <img
-              src="/assets/image/pesquisa.png"
-              alt="Pesquisar"
-            />
-          </Link>
-
+         
           <Link to="/login" className="icone-header">
             <img
               src="/assets/image/log-up.png"
@@ -146,7 +140,7 @@ function Index() {
             />
           </Link>
 
-          <Link to="/cadastro" className="icone-header favorito-header">
+          <Link to="" className="icone-header favorito-header">
             ♡
           </Link>
 
@@ -169,9 +163,9 @@ function Index() {
             <h1>Encontre seu novo melhor amigo</h1>
 
             <div className="frase-decorativa">
-              <span>🐾</span>
+            
               <p>Pequenos detalhes, grande diferença.</p>
-              <span>🐾</span>
+              <span>♡</span>
             </div>
           </div>
 

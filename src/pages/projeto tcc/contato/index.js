@@ -1,3 +1,4 @@
+
 import React, { useState } from "react";
 import "./index.scss";
 
@@ -222,16 +223,12 @@ function App() {
         </div>
 
         <div className="footer-final">
-          <p>
+          <p className="sla">
             © 2026 PataAmiga. Todos os direitos reservados.
             Feito com amor por pets.
           </p>
 
-          <div className="redes">
-            <a href="https://facebook.com" aria-label="Facebook">f</a>
-            <a href="https://instagram.com" aria-label="Instagram">◎</a>
-            <a href="https://youtube.com" aria-label="YouTube">▶</a>
-          </div>
+        
         </div>
 
       </footer>
