@@ -136,7 +136,7 @@ function App() {
 
         <section className="titulo-contato">
 
-          <h1>Fale Conosco 🐾</h1>
+          <h1>Fale Conosco </h1>
 
           <p>
             Tem alguma dúvida sobre o processo de adoção,

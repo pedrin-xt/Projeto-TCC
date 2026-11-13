@@ -105,7 +105,7 @@ function Sobre() {
 
             <h1>
               Nossa missão: conectar corações e transformar histórias,
-              criando novos começos. 🐾
+              criando novos começos.
             </h1>
 
             <p>

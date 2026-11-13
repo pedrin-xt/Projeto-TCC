@@ -15,23 +15,23 @@ function Index() {
       id: 1,
       nome: "Luna",
       tipo: "Gata",
-      idade: "4 anos",
-      porte: "Pequeno",
+      idade: "3 anos",
+      porte: "Médio",
       imagem: "/assets/image-animais/luna.png"
     },
     {
       id: 2,
       nome: "Luke",
       tipo: "Cachorro",
-      idade: "3 anos",
-      porte: "Médio",
+      idade: "5 meses",
+      porte: "pequeno",
       imagem: "/assets/image-animais/luke.png"
     },
     {
       id: 3,
       nome: "Pipoca",
       tipo: "Gata",
-      idade: "3 meses",
+      idade: "2 anos",
       porte: "Pequeno",
       imagem: "/assets/image-animais/pipoca.png"
     },
@@ -39,40 +39,40 @@ function Index() {
       id: 4,
       nome: "Chico",
       tipo: "Cachorro",
-      idade: "2 anos",
-      porte: "Grande",
+      idade: "4 meses",
+      porte: "Pequeno",
       imagem: "/assets/image-animais/chico.png"
     },
     {
       id: 5,
       nome: "Snoopy",
       tipo: "Cachorro",
-      idade: "1 ano",
-      porte: "Médio",
+      idade: "5 meses",
+      porte: "Pequeno",
       imagem: "/assets/image-animais/snoopy.png"
     },
     {
       id: 6,
       nome: "Nina",
       tipo: "Gata",
-      idade: "4 anos",
-      porte: "Pequeno",
+      idade: "3 anos",
+      porte: "Grande",
       imagem: "/assets/image-animais/nina.png"
     },
     {
       id: 7,
       nome: "Bob",
       tipo: "Cachorro",
-      idade: "2 anos",
-      porte: "Médio",
+      idade: "2 meses",
+      porte: "Pequeno",
       imagem: "/assets/image-animais/bob.png"
     },
     {
       id: 8,
       nome: "Mel",
       tipo: "Gata",
-      idade: "1 ano",
-      porte: "Pequeno",
+      idade: "2 anos",
+      porte: "Grande",
       imagem: "/assets/image-animais/mel.png"
     }
   ];
@@ -154,7 +154,7 @@ function Index() {
         <section className="apresentacao">
 
           <div className="decoracao-adocao">
-            <span>🐾</span>
+            <span></span>
             <strong>Adote<br />mude uma<br />vida</strong>
             <span>♡</span>
           </div>
