@@ -1,0 +1,37 @@
+PATA AMIGA - ATUALIZAÇÕES DO FRONTEND
+
+O que foi incorporado:
+- Rotas /login (usuário) e /admin/login (equipe/ONG).
+- Alternância entre Entrar e Criar conta nas duas áreas.
+- Seletor visual entre Usuário e ONG, mantendo a identidade verde e clara do site.
+- Cadastro da equipe com nome, e-mail, senha, telefone opcional e código de acesso.
+- Integração dos formulários com POST /usuarios/login, POST /usuarios/registro,
+  POST /admins/login e POST /admins/registro.
+- Armazenamento da sessão em localStorage com a chave pataamiga_sessao.
+- Envio de token Bearer nas próximas requisições quando a API retornar um token.
+- Caminhos de imagens do public ajustados para começar em /assets/, para funcionarem
+  também quando o usuário estiver em rotas internas.
+
+CONFIGURAÇÃO
+1. Inicie a API.
+2. Por padrão, o frontend chama http://localhost:3000.
+3. Se necessário, crie um arquivo .env na raiz do React com:
+   REACT_APP_API_URL=http://localhost:3000
+4. Para permitir cadastro da equipe, configure ADMIN_CODIGO no .env do BACKEND
+   com o mesmo código que será digitado no formulário.
+5. Reinicie o servidor React depois de alterar o .env.
+
+IMPORTANTE SOBRE A ÁREA DA ONG
+O endpoint /admins/registro cria uma conta para um integrante autorizado da equipe.
+O código ADMIN_CODIGO protege o cadastro. Isso não representa, por si só, validação
+jurídica da ONG, conferência de CNPJ ou cadastro institucional da organização.
+
+IMAGENS
+As imagens originais estão mantidas em public/assets. Os caminhos no React agora
+usam /assets/... para evitar que o navegador procure as imagens dentro de /login,
+/contato ou outras rotas.
+
+TESTE
+Este pacote foi conferido quanto à integridade do ZIP e à existência dos arquivos
+de imagem referenciados. A compilação npm build e a integração em execução com a API
+precisam ser testadas no computador onde o projeto será executado.

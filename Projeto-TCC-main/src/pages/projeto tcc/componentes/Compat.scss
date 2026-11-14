@@ -1,0 +1,11 @@
+.compat{margin:6px 0}.compat b{font-size:13px}
+.compat-barra{height:7px;border-radius:99px;background:#e9f0e8;overflow:hidden;margin-top:4px}
+.compat-barra i{display:block;height:100%;background:#2e7548;border-radius:99px}
+.compat.alta b{color:#286642}.compat.media b{color:#a56d00}.compat.media .compat-barra i{background:#e0a21a}
+.compat.baixa b{color:#a62b24}.compat.baixa .compat-barra i{background:#d4574b}
+.compat-vazia{display:block;margin:6px 0;color:#718076;font-size:13px}
+.selo-status{display:inline-block;padding:3px 10px;border-radius:20px;font-size:12px;font-weight:700;background:#eee;color:#555}
+.selo-status.solicitada,.selo-status.em_analise{background:#fff3d6;color:#8a6100}
+.selo-status.aprovada,.selo-status.concluida{background:#eaf4e9;color:#286642}
+.selo-status.recusada{background:#fff0ef;color:#a62b24}
+.selo-numero{display:inline-block;min-width:20px;margin-left:8px;padding:1px 7px;border-radius:99px;background:#d4574b;color:#fff;font-size:12px;font-weight:700;text-align:center}

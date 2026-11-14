@@ -1,0 +1,25 @@
+/* Painel da ONG: usa o visual do Perfil (perfil/index.scss) e só acrescenta o que é da ONG */
+.ong-selo{background:#eaf4e9;color:#286642;border-radius:20px;padding:6px 14px;font-weight:700;font-size:13px}
+.ong-filtros{display:flex;gap:8px;flex-wrap:wrap;margin:16px 0}
+.ong-filtros button{background:#fff;border:1px solid #d8e0d6;color:#244b38;border-radius:20px;padding:7px 16px;font:inherit;font-weight:600;cursor:pointer}
+.ong-filtros button.ativo{background:#2e7548;border-color:#2e7548;color:#fff}
+.ong-lista{display:grid;gap:12px;margin-top:10px}
+.ong-pedido{display:grid;grid-template-columns:96px 1fr auto;gap:18px;align-items:start;padding:16px;border:1px solid #e2e8df;border-radius:10px;background:#fff}
+.ong-pedido>img{width:96px;height:96px;object-fit:cover;border-radius:12px}
+.ong-pedido-info h3{font-family:'Playfair Display',serif;font-size:20px;margin:0 0 4px}.ong-pedido-info p{margin:4px 0;font-size:14px}
+.ong-mudo{color:#718076;font-size:13px}.ong-obs{font-style:italic;color:#3d5a49}
+.ong-questionario{display:grid;grid-template-columns:auto 1fr;gap:3px 12px;margin:10px 0;font-size:13px}.ong-questionario dt{font-weight:700;color:#286642}.ong-questionario dd{margin:0}
+.ong-acoes{display:flex;flex-direction:column;gap:8px;min-width:150px}.ong-acoes button,.ong-acoes-linha button{margin:0}
+.ong-perigo{background:#fff;border:1px solid #c0584e;color:#a62b24;border-radius:8px;padding:10px 16px;font:inherit;font-weight:600;cursor:pointer}.ong-perigo:hover{background:#fff0ef}
+.ong-linha{display:flex;justify-content:space-between;gap:16px;align-items:center;padding:14px 16px;border:1px solid #e2e8df;border-radius:10px;background:#fff}
+.ong-linha>div:first-child{display:grid;gap:4px}.ong-linha span,.ong-linha small{font-size:13px;color:#718076}.ong-linha p{margin:4px 0 0;font-size:14px;color:#244b38}
+.ong-acoes-linha{display:flex;gap:8px;flex-wrap:wrap}
+.ong-msg{align-items:flex-start}
+.ong-resumo{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px;margin-top:16px}
+.ong-resumo div{background:#f8faf6;border:1px solid #e2e8df;border-radius:10px;padding:14px}.ong-resumo strong{display:block;font-size:22px;color:#286642}.ong-resumo span{font-size:13px;color:#718076}
+.ong-campo-largo{display:grid;gap:6px;margin-top:14px;font-weight:600;font-size:14px}.ong-campo-largo textarea{border:1px solid #d8e0d6;border-radius:8px;padding:11px;font:inherit}
+.ong-botoes{display:flex;gap:10px;margin-top:16px;flex-wrap:wrap}.ong-botoes button{margin:0}
+.ong-subtitulo{margin-top:30px}
+@media(max-width:760px){.ong-pedido{grid-template-columns:1fr}.ong-acoes{flex-direction:row;flex-wrap:wrap}.ong-linha{flex-direction:column;align-items:flex-start}}
+.ong-fotos{display:flex;flex-wrap:wrap;gap:28px 48px;padding:18px 0;border-bottom:1px solid #e7e9e2}
+.ong-adotante{display:flex!important;align-items:center;gap:10px}

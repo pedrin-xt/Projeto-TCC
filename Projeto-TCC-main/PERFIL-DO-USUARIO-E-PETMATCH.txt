@@ -1,0 +1,14 @@
+ATUALIZAÇÃO: PERFIL DO USUÁRIO E PETMATCH
+
+- O ícone de coração no cabeçalho foi substituído pelo acesso ao perfil do usuário.
+- O perfil reúne Minha conta, Segurança, Questionário PetMatch, Meus Matches, Favoritos e Minhas adoções.
+- A foto de perfil pode ser escolhida no computador. Nesta versão, ela fica salva no armazenamento local do navegador (localStorage), não no servidor; portanto, aparece no mesmo navegador/dispositivo.
+- Nome e telefone são atualizados por PUT /usuarios/eu.
+- A troca de senha usa PUT /usuarios/eu/senha e exige a senha atual.
+- A alteração de e-mail usa a nova rota PUT /usuarios/eu/email, também exigindo a senha atual.
+
+IMPORTANTE PARA O BACKEND:
+Instale/substitua a pasta routes/usuarios.js pela versão incluída no pacote API atualizado. Não é necessário alterar tabelas do MySQL para habilitar a nova rota de e-mail.
+
+Para executar o frontend, mantenha o .env na mesma pasta do package.json:
+REACT_APP_API_URL=http://localhost:3001

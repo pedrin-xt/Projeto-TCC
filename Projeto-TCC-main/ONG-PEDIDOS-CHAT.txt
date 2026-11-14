@@ -1,0 +1,28 @@
+PATA AMIGA - PAINEL DA ONG, PEDIDOS POR COMPATIBILIDADE E CHAT
+
+Rotas novas no front
+- /admin  -> painel exclusivo da ONG (entra por /admin/login). Abas: Pedidos, Animais, Doações,
+             Mensagens, Conversas e Histórico.
+- /perfil -> ganhou "Solicitar adoção" nos matches e favoritos, "Minhas solicitações" (com % de
+             compatibilidade e status) e "Conversas".
+- "Meu Match" aparece no menu do site somente para quem está logado (e não é da ONG).
+
+Regras
+- Contas da ONG não abrem /doar, /contato nem /perfil: são levadas ao painel.
+- Cada ONG vê só os pedidos, doações, mensagens, animais e conversas da própria ONG.
+- Aprovar com compatibilidade baixa (<50%) ou sem questionário pede confirmação. Nada é aprovado
+  automaticamente: a decisão final é da ONG.
+- Notificação de pedidos novos: apenas no painel da ONG (número na aba + aviso).
+
+Requisitos
+- Usar a API API_ANIMAIS-ongs-chat.zip (rotas /ongs, /historico, /chat e filtros por ONG).
+- Ao ligar, a API cria sozinha as tabelas novas. Depois ajuste o nome da ONG:
+  UPDATE ongs SET nome = 'Nome da sua ONG' WHERE id = 1;
+- Com mais de uma ONG cadastrada, Doar, Contato e o cadastro da equipe pedem a escolha da ONG.
+
+FOTOS (perfil e ONG)
+- A foto de perfil agora fica salva na CONTA (servidor), não mais no navegador. Cada conta tem a sua,
+  em qualquer aparelho, e uma conta não herda a foto de outra.
+- A ONG tem uma LOGO própria, separada da foto pessoal de cada pessoa da equipe.
+- Usuário: Perfil > Meus dados > Foto de perfil. ONG: Painel da ONG, topo (Logo da ONG e Sua foto).
+- As fotos aparecem nas conversas e nos pedidos. JPG, PNG ou WEBP de até 2 MB.

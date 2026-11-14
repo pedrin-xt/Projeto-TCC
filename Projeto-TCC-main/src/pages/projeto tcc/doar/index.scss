@@ -1,0 +1,90 @@
+.pagina-doar {
+  min-height: 100vh;
+  background: #f8f7f2;
+  color: #24442e;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.pagina-doar .inicio {
+  height: 85px;
+  width: 100%;
+  padding: 0 6%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff;
+  position: relative;
+  z-index: 10;
+}
+.pagina-doar .logo-pata { width: 145px; height: auto; object-fit: contain; }
+.pagina-doar .menu-navegacao { display: flex; align-items: center; gap: 35px; }
+.pagina-doar .nav-item { color: #526456; font-size: 15px; padding: 10px 0; text-decoration: none; transition: .3s; }
+.pagina-doar .nav-item:hover, .pagina-doar .nav-item.ativo { color: #245b35; border-bottom: 2px solid #245b35; }
+.pagina-doar .icones-header { display: flex; align-items: center; gap: 20px; }
+.pagina-doar .login { width: 27px; height: 27px; object-fit: contain; }
+.pagina-doar .botao-favorito { border: 0; background: transparent; cursor: pointer; font-size: 32px; }
+.pagina-doar .coracao-verde { color: #3d8952; }
+.pagina-doar .painel-favoritos { position: absolute; z-index: 20; right: 5%; top: 75px; width: 290px; padding: 25px; background: #fff; border-radius: 12px; box-shadow: 0 5px 20px rgba(0,0,0,.15); }
+.pagina-doar .favoritos-vazio { text-align: center; }
+.pagina-doar .favoritos-vazio span { font-size: 35px; color: #3d8952; }
+.pagina-doar .favoritos-vazio h3 { margin: 10px 0; color: #23472d; }
+.pagina-doar .favoritos-vazio p { font-size: 13px; color: #68766a; line-height: 1.5; }
+
+.doar-container { max-width: 1200px; margin: 0 auto; padding: 55px 40px 75px; }
+.doar-apresentacao { min-height: 245px; padding: 38px 55px; border-radius: 22px; background: #e8f0e5; display: flex; align-items: center; justify-content: space-between; overflow: hidden; }
+.doar-apresentacao > div { max-width: 650px; }
+.doar-etiqueta { color: #478052; font-size: 12px; font-weight: 700; letter-spacing: 2px; }
+.doar-apresentacao h1 { margin: 13px 0; color: #21442d; font: 700 38px Georgia, serif; line-height: 1.2; }
+.doar-apresentacao p { max-width: 610px; color: #647367; font-size: 15px; line-height: 1.7; }
+.doar-apresentacao img { width: 230px; max-height: 220px; object-fit: contain; align-self: flex-end; }
+.doar-conteudo { display: grid; grid-template-columns: .9fr 1.1fr; gap: 45px; align-items: start; margin-top: 45px; }
+.doar-texto { padding: 15px 5px; }
+.doar-texto h2 { color: #21442d; font: 700 29px Georgia, serif; line-height: 1.25; margin-bottom: 15px; }
+.doar-texto > p { color: #68766a; font-size: 14px; line-height: 1.7; margin-bottom: 27px; }
+.doar-beneficio { display: flex; align-items: center; gap: 15px; margin: 22px 0; }
+.doar-beneficio > span { width: 45px; height: 45px; border-radius: 50%; background: #e5eee2; color: #3d8952; display: grid; place-items: center; font-size: 23px; flex-shrink: 0; }
+.doar-beneficio strong { color: #31583a; font-size: 15px; }
+.doar-beneficio p { color: #7a867c; font-size: 13px; margin-top: 5px; }
+.doar-texto .doar-observacao { border-left: 3px solid #9bb99a; padding-left: 13px; margin-top: 30px; font-size: 12px; }
+.doar-form-card { background: #fff; border: 1px solid #eae9e2; border-radius: 17px; padding: 30px; box-shadow: 0 3px 12px rgba(0,0,0,.035); }
+.doar-form-card h2 { color: #21442d; font: 700 27px Georgia, serif; margin-bottom: 7px; }
+.doar-form-intro { color: #7a867c; font-size: 13px; margin-bottom: 23px; }
+.doar-campo { display: flex; flex-direction: column; gap: 8px; margin-bottom: 17px; color: #385740; font-size: 13px; font-weight: 600; }
+.doar-campo span { color: #89948b; font-weight: 400; }
+.doar-campo input, .doar-campo select, .doar-campo textarea { width: 100%; border: 1px solid #dfe5dc; border-radius: 9px; background: #fdfdfb; padding: 12px 13px; color: #344c39; font: 14px Arial, sans-serif; outline: none; }
+.doar-campo input:focus, .doar-campo select:focus, .doar-campo textarea:focus { border-color: #6b9b70; box-shadow: 0 0 0 3px rgba(107,155,112,.12); }
+.doar-campo textarea { resize: vertical; }
+.doar-enviar { width: 100%; border: 0; border-radius: 9px; padding: 14px 18px; background: #367b48; color: #fff; font-size: 14px; font-weight: 700; cursor: pointer; transition: .2s; }
+.doar-enviar:hover { background: #28663a; transform: translateY(-1px); }
+.doar-enviar:disabled { opacity: .65; cursor: wait; }
+.doar-alerta { border-radius: 8px; padding: 11px 13px; margin: 0 0 15px; font-size: 13px; line-height: 1.5; }
+.doar-alerta.erro { background: #fff0ed; color: #a23b2c; }
+.doar-alerta.sucesso { background: #edf7ed; color: #28663a; }
+.doar-footer { padding: 32px 7% 20px; background: #21442d; color: #fff; text-align: center; }
+.doar-footer img { width: 125px; max-height: 65px; object-fit: contain; }
+.doar-footer p { max-width: 480px; margin: 12px auto 18px; color: #d9e5d9; font-size: 13px; line-height: 1.6; }
+.doar-footer div { display: flex; justify-content: center; gap: 24px; flex-wrap: wrap; margin-bottom: 22px; }
+.doar-footer a { color: #fff; text-decoration: none; font-size: 13px; }
+.doar-footer a:hover { text-decoration: underline; }
+.doar-footer small { color: #c5d4c6; font-size: 11px; }
+
+@media (max-width: 850px) {
+  .pagina-doar .inicio { height: auto; min-height: 85px; padding: 15px 5%; flex-wrap: wrap; gap: 15px; }
+  .pagina-doar .menu-navegacao { order: 3; width: 100%; justify-content: center; gap: 18px; flex-wrap: wrap; }
+  .doar-container { padding: 30px 20px 50px; }
+  .doar-apresentacao { padding: 30px; }
+  .doar-apresentacao h1 { font-size: 30px; }
+  .doar-apresentacao img { width: 150px; }
+  .doar-conteudo { grid-template-columns: 1fr; gap: 20px; }
+}
+@media (max-width: 520px) {
+  .doar-apresentacao { padding: 25px 22px; }
+  .doar-apresentacao img { display: none; }
+  .doar-apresentacao h1 { font-size: 27px; }
+  .doar-form-card { padding: 22px 18px; }
+  .pagina-doar .menu-navegacao { gap: 13px; }
+  .pagina-doar .nav-item { font-size: 13px; }
+}
+
+/* Ícone de acesso ao perfil no cabeçalho */
+.botao-perfil{display:inline-flex;align-items:center;justify-content:center;text-decoration:none}.icone-perfil{position:relative;display:inline-block;width:22px;height:22px}.icone-perfil:before{content:"";position:absolute;width:7px;height:7px;border:2px solid currentColor;border-radius:50%;left:6.5px;top:1px}.icone-perfil:after{content:"";position:absolute;width:16px;height:9px;border:2px solid currentColor;border-bottom:0;border-radius:11px 11px 0 0;left:2px;bottom:1px}.perfil-header-link .icone-perfil{color:inherit}

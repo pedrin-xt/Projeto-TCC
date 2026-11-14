@@ -1,0 +1,14 @@
+PETMATCH NO PERFIL - IMPLEMENTACAO FRONTEND
+
+Acesse /perfil depois de fazer login. O login de usuário agora redireciona para o perfil.
+
+Funcionalidades conectadas à API:
+- Dados da conta: GET /usuarios/eu
+- Questionário: GET/POST/PUT /adotantes
+- Compatibilidade: GET /match/adotante/:usuario_id
+- Favoritos: GET/POST/DELETE /favoritos
+- Solicitações: GET /adocao/minhas
+
+O questionário usa os valores esperados pela API atual: espaco (apartamento/casa_pequena/casa_grande), atividade (baixa/alta), tempo (muito/pouco), experiencia (iniciante/experiente), criancas e outros_pets (booleanos).
+
+Importante: o backend e o banco precisam ter as tabelas e rotas correspondentes. Nenhuma migração SQL foi executada nem necessária conforme o backend enviado. Os animais só aparecerão nos matches se existirem em animais com status=disponivel e os campos de compatibilidade preenchidos.
