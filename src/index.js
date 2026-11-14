@@ -1,0 +1,26 @@
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+
+import App from './pages/app/App';
+import Eventos from './pages/projeto tcc/adotar/index';
+import Projeto from './pages/projeto tcc/tela inicial/index';
+import Contato from './pages/projeto tcc/contato/index';
+import Sobre from './pages/projeto tcc/sobre/index';
+import {BrowserRouter,Routes,Route} from 'react-router-dom';
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+  <React.StrictMode>
+    <BrowserRouter>
+    <Routes>
+      <Route path='/' element={<Projeto/>} />
+      <Route path='/adotar' element={<Eventos/>} />
+      <Route path='/incio' element={<App/>} />
+      <Route path='/contato' element={<Contato/>} />
+      <Route path='/sobre' element={<Sobre/>}/>
+    </Routes>
+    </BrowserRouter>
+  </React.StrictMode>
+);
+
+
